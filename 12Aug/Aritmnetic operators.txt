@@ -1,0 +1,34 @@
+  int a = 10, b = 3;
+
+  Console.WriteLine("Addition: " + (a + b));         // 13
+  Console.WriteLine("Subtraction: " + (a - b));      // 7
+  Console.WriteLine("Multiplication: " + (a * b));   // 30
+  Console.WriteLine("Division: " + (a / b));         // 3
+  Console.WriteLine("Modulus: " + (a % b));          // 1
+
+  double x = 10;
+  double y = 3;
+
+  Console.WriteLine (Convert.ToDecimal(x / y));
+
+  float f = 1.123456789f;
+  double d = 1.123456789123456;
+  decimal m = 1.123456789123456789123456789m;
+
+  Console.WriteLine("Float   : " + f); //seven digits
+  Console.WriteLine("Double  : " + d); //fifteen digits
+  Console.WriteLine("Decimal : " + m); //twenty-eight digits
+
+  double an = 0.1;
+  double bn = 0.2;
+  double sum = an + bn;
+
+  Console.WriteLine("Sum: " + sum);               // Output: 0.30000000000000004
+  Console.WriteLine(sum == 0.3);                  // Output: False
+
+  decimal am = 0.1m;
+  decimal bm = 0.2m;
+  decimal sums = am + bm;
+
+  Console.WriteLine("Sum: " + sums);      // Output: 0.3
+  Console.WriteLine(sums == 0.3m);        // Output: True

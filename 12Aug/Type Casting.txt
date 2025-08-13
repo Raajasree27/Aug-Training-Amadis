@@ -1,0 +1,36 @@
+           int num = 100;
+           float myFloat = num;  // Implicit casting -> for smaller to larger types
+           Console.WriteLine(myFloat);  // Output: 100
+
+           float myfloat = 9.75f;
+           int myInt = (int)myfloat;  // Explicit casting -> from larger to small types
+           Console.WriteLine(myInt);  // Output: 9  (decimal part is lost)
+
+
+           double d = 10.99;
+           int i = (int)d;       // Explicit
+           Console.WriteLine(i); // Output: 10
+
+           object obj = "hello";
+
+           string str = obj as string;
+           if (str != null)
+           {
+               Console.WriteLine("Casting successful: " + str);
+           }
+
+           // Using 'is'
+           if (obj is string)
+           {
+               Console.WriteLine("It is a string.");
+           }
+
+           string s = "123";
+           int number = Convert.ToInt32(s);
+           Console.WriteLine(number);  // Output: 123
+
+           bool isActive = true;
+           int result = Convert.ToInt32(isActive);  // Output: 1
+
+           string val = null;
+           int nums = Convert.ToInt32(val);  // Output: 0 (safe, no exception)

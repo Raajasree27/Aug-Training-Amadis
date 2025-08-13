@@ -1,0 +1,33 @@
+bool result = (5 > 3) && (8 > 6);  // true && true → true
+
+int age = 25;
+bool hasLicense = true;
+
+if (age > 18 && hasLicense)
+{
+    Console.WriteLine("Eligible to drive.");
+}
+
+bool ans = (5 > 10) || (8 > 6);  // false || true → true
+
+bool isAdmin = false;
+bool isManager = true;
+
+if (isAdmin || isManager)
+{
+    Console.WriteLine("Access granted.");
+}
+
+bool isRaining = true;
+bool goOutside = !isRaining;  // !true → false
+
+bool isLoggedIn = false;
+
+if (!isLoggedIn)
+{
+    Console.WriteLine("Please log in first.");
+}
+// Example of using the null-coalescing operator    
+string userName = null;
+string displayName = userName ?? "Guest";  // userName is null, so displayName becomes "Guest"
+Console.WriteLine($"Display Name: {displayName}");

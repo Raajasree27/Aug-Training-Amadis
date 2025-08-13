@@ -1,0 +1,26 @@
+ int age = 20;
+ float temperature = 36.6f;
+ double pi = 3.1415926536;
+ decimal price = 19.9m; //m is the suffix of the decimal literal
+ char grade = 'A';
+ string name = "RaajaSree";
+ bool isName = true;
+ byte level = 200; //8 bit unsigned integers (0 to 255)
+ short year = 2025; //16 bit signed integers (-32,768 to 32,767)
+ long population = 7800000000L; //64 bit signed integers L is the suffix
+ object obj_1 = "This is an object type"; //object can hold any data type
+
+ object obj = 50;
+ int number = (int)obj;  // unboxing
+
+
+
+ Console.WriteLine("Hello, World!");
+ //Console.ReadLine();
+ // Declare a variable to hold the user's name
+ string userName;
+ // Prompt the user for their name
+ Console.Write("Please enter your name: ");
+ userName = "Raaja";
+ // Greet the user
+ Console.WriteLine($"Hello, {userName}! Welcome to Day 2 of our C# journey.");
