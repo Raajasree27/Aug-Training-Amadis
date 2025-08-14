@@ -12,3 +12,4 @@ C:\Amadis\Training - Aug\HelloWorld\Hello World\obj\Debug\net8.0\refint\Hello Wo
 C:\Amadis\Training - Aug\HelloWorld\Hello World\obj\Debug\net8.0\Hello World.pdb
 C:\Amadis\Training - Aug\HelloWorld\Hello World\obj\Debug\net8.0\Hello World.genruntimeconfig.cache
 C:\Amadis\Training - Aug\HelloWorld\Hello World\obj\Debug\net8.0\ref\Hello World.dll
+C:\Amadis\Training - Aug\HelloWorld\Hello World\obj\Debug\net8.0\Hello World.sourcelink.json

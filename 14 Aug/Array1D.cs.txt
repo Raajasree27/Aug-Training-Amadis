@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+
+
+namespace Hello_World
+{
+    public class Class1
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = new int[5]; 
+            numbers[0] = 10;
+            numbers[1] = 20;
+            numbers[2] = 30;
+            numbers[3] = 40;
+            numbers[4] = 50;
+
+            Console.WriteLine(numbers[0]); 
+            Console.WriteLine(numbers[4]); 
+
+            for(int i=0;i<numbers.Length;i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+
+            //Array of Strings
+            string[] fruits = { "Apple", "Banana", "Mango" };
+
+            foreach (string fruit in fruits)
+            {
+                Console.WriteLine(fruit);
+            }
+
+
+
+        }
+
+    }
+}

@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+
+
+namespace Hello_World
+{
+    public class Class1
+    {
+        static void Main(string[] args)
+        {
+            int[,] matrix = {
+            {1, 2},
+            {3, 4},
+            {5, 6} };
+
+            Console.WriteLine(matrix[0, 1]);
+
+            for (int row = 0; row < matrix.GetLength(0); row++) // GetLength(0) = number of rows
+            {
+                for (int col = 0; col < matrix.GetLength(1); col++) // GetLength(1) = number of columns
+                {
+                    Console.Write(matrix[row, col] + " ");
+                }
+                Console.WriteLine(); // Move to next line after each row
+            }
+
+
+
+
+        }
+
+    }
+}
