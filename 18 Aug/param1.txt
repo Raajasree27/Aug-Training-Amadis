@@ -1,0 +1,22 @@
+using System;
+
+public class RefExample
+{
+    public void AddTen(ref int number)
+    {
+        number += 10;
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        int value = 5;
+
+        RefExample example = new RefExample();
+        example.AddTen(ref value);
+
+        Console.WriteLine("After AddTen: " + value); // Output: 15
+    }
+}
