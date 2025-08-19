@@ -1,0 +1,41 @@
+using System;
+
+
+public class AuthProgram
+{
+    public bool Login(string username, string password)
+    {
+        // Simulate a login process
+        if (username == "admin" && password == "password")
+        {
+        
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+public class Program
+{
+    public static void Main()
+    {
+        AuthProgram auth = new AuthProgram();
+        Console.WriteLine("Enter username:");
+        string username = Console.ReadLine();
+        Console.WriteLine("Enter password:");
+        string password = Console.ReadLine();
+        bool isloggedIn = auth.Login(username, password);
+
+        if(isloggedIn)
+        {
+            Console.WriteLine("Login successful!");
+        }
+        else
+        {
+            Console.WriteLine("Login failed. Please try again.");
+        }
+
+    }
+}
