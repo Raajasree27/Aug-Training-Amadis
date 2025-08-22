@@ -1,0 +1,36 @@
+using System;
+
+interface IAnimal
+{
+    void Speak();
+}
+class Dog : IAnimal
+{
+    public void Speak()
+    {
+        Console.WriteLine("Dog says: Woof!");
+    }
+}
+
+class Cat : IAnimal
+{
+    public void Speak()
+    {
+        Console.WriteLine("Cat says: Meow!");
+    }
+}
+
+// Usage
+class Program
+{
+    static void Main(string[] args)
+    {
+        IAnimal dog = new Dog();
+        IAnimal cat = new Cat();
+
+        dog.Speak(); // Output: Dog says: Woof!
+        cat.Speak(); 
+    }
+}
+
+ gujmhtkixykcucoliuyrghfjmg
